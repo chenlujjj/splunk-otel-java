@@ -3607,6 +3607,8 @@ public class MetadataGenerator {
         splunkInstrumentation("khttp").component("khttp", "0.1 and higher").build());
     instrumentations.add(
         splunkInstrumentation("glassfish").component("GlassFish", "5.0 and higher").build());
+    instrumentations.add(
+        splunkInstrumentation("jsonrpc4j").component("JsonRpc4j", "1.3 and higher").build());
     // XXX jetty, liberty and tomcat have the same key as an existing otel instrumentation
     instrumentations.add(
         splunkInstrumentation("jetty").component("Jetty", "9.4 and higher").build());

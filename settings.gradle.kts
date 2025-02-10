@@ -28,6 +28,7 @@ include(
     "instrumentation:compile-stub",
     "instrumentation:glassfish",
     "instrumentation:jetty",
+    "instrumentation:jsonrpc4j",
     "instrumentation:jvm-metrics",
     "instrumentation:khttp",
     "instrumentation:liberty",
