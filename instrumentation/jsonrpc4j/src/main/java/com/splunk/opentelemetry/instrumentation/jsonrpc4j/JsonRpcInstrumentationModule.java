@@ -19,6 +19,11 @@ public class JsonRpcInstrumentationModule extends InstrumentationModule {
   }
 
   @Override
+  public boolean isHelperClass(String className) {
+    return className.startsWith("com.splunk.opentelemetry.instrumentation");
+  }
+
+  @Override
   public List<TypeInstrumentation> typeInstrumentations() {
     return asList(
         new JsonRpcServerInstrumentation(),
